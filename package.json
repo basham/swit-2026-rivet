@@ -1,0 +1,16 @@
+{
+	"name": "swit-2026-rivet",
+	"version": "1.0.0",
+	"description": "'Rivet 3 for Developers' talk for Indiana University's Statewide IT 2026 Conference",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Chris Basham <csbasham@iu.edu>",
+	"license": "BSD-3-Clause",
+	"packageManager": "pnpm@10.32.1",
+	"devDependencies": {
+		"rivet-core": "3.0.0-alpha.9"
+	}
+}

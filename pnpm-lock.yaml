@@ -1,0 +1,49 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      rivet-core:
+        specifier: 3.0.0-alpha.9
+        version: 3.0.0-alpha.9
+
+packages:
+
+  '@webreflection/lie@0.1.1':
+    resolution: {integrity: sha512-dfxgXj0SkzDYGPsxCOCwSrrrouXLRbEu+ivSMQG2INK+VIphpLT9JgANzUNo+X4GfBJm57ZgC5ofSvRmb7ihFg==}
+
+  element-notifier@0.2.0:
+    resolution: {integrity: sha512-S34ZVw36B5KECmwcVYbwx1+qwpt/Eq+7m7s2FTR9lIXiGRwS2vsrhJygqyLnNeekvf54nVhj4rzeXTF/96urNw==}
+
+  qsa-observer@2.0.2:
+    resolution: {integrity: sha512-FUB3Ppt7+uCdfGvK0mt+YvZw2XH8r6N3Ljv4p9MbR36FebO7w5Ql4PZg64KaUZjUMzBoxnOYCCUHMP9OgFAE5Q==}
+
+  rivet-core@3.0.0-alpha.9:
+    resolution: {integrity: sha512-m+Q+QL8v/GJwCGv3xyDDw/mkI5PMsSMpptClzII8PMuHhPdhw4RJhY3BoN4epSTDp/HN1z/OAkOaQ8sc/dYQbQ==}
+
+  wicked-elements@3.1.2:
+    resolution: {integrity: sha512-iR2gXwt222BHl2AqbJIQt6678yffXn1uKVZJUaqIBEo0ja3ZE2B1eDumNGB4mFgjtdHC/kHCgp7Ckw2yhSL22g==}
+
+snapshots:
+
+  '@webreflection/lie@0.1.1': {}
+
+  element-notifier@0.2.0: {}
+
+  qsa-observer@2.0.2:
+    dependencies:
+      element-notifier: 0.2.0
+
+  rivet-core@3.0.0-alpha.9:
+    dependencies:
+      wicked-elements: 3.1.2
+
+  wicked-elements@3.1.2:
+    dependencies:
+      '@webreflection/lie': 0.1.1
+      qsa-observer: 2.0.2
