@@ -5,20 +5,26 @@
 import Intro from "../slides/intro.astro";
 
 const rivetUrl = "https://unpkg.com/rivet-core@3.0.0-alpha.9/dist";
+const summary = "The next major version of the Rivet Design System (version 3) will introduce technical changes to design tokens, components, and utilities. You will learn how these changes impact the user and developer experience; how we are adopting modern browser features and development tooling; and how we can support your migration from version 2. You will also hear firsthand from a developer about their experience deploying Rivet 3 and working with IU marketing teams on their websites."
 ---
 
-<html>
+<html lang="en">
 	<head>
+		<title>Rivet 3 for Developers - Statewide IT 2026</title>
+		<meta charset="UTF-8">
+		<meta name="description" content={summary}>
 		<link rel="stylesheet" href={`${rivetUrl}/rivet.css`}>
 		<link rel="stylesheet" href={`${rivetUrl}/rivet-icons.css`}>
 		<link rel="stylesheet" href={`${rivetUrl}/rivet-stickers.css`}>
 	</head>
 	<body>
-		<Intro />
+		<main>
+			<Intro />
+		</main>
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html {
 		scroll-behavior: auto;
 	}

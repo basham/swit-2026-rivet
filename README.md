@@ -1,2 +1,14 @@
-# swit-2026-rivet
-"Rivet 3 for Developers" talk for Indiana University's Statewide IT 2026 Conference
+# Rivet 3 for Developers
+
+Presented by Chris Basham and Zachary Todd
+
+[Statewide IT Conference 2026](https://www.statewideit.iu.edu) at Indiana University
+
+The next major version of the [Rivet Design System](https://rivet.iu.edu) (version 3) will introduce technical changes to design tokens, components, and utilities. You will learn how these changes impact the user and developer experience; how we are adopting modern browser features and development tooling; and how we can support your migration from version 2. You will also hear firsthand from a developer about their experience deploying Rivet 3 and working with IU marketing teams on their websites.
+
+## Keyboard shortcuts
+
+- **Right arrow:** Next slide
+- **Shift + Right arrow:** Last slide
+- **Left arrow:** Previous slide
+- **Shift + Left arrow:** First slide

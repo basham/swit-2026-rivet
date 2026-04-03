@@ -1,7 +1,7 @@
 {
 	"name": "swit-2026-rivet",
 	"version": "1.0.0",
-	"description": "'Rivet 3 for Developers' talk for Indiana University's Statewide IT 2026 Conference",
+	"description": "'Rivet 3 for Developers' talk at Statewide IT Conference 2026",
 	"main": "index.js",
 	"scripts": {
 		"dev": "astro dev --open",
