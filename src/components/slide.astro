@@ -14,7 +14,7 @@ const id = getSlideId();
 		background-color: var(--rvt-color-theme-background);
 		border-block-end: var(--rvt-size-8) solid var(--rvt-color-theme-ui);
 		display: block;
-		font-size: 4vw;
+		font-size: 6vmin;
 		justify-content: center;
 		padding: 1em;
 		height: 100vh;
@@ -26,6 +26,10 @@ const id = getSlideId();
 			margin-block-end: 0;
 		}
 
+		b {
+			color: var(--rvt-color-theme-text-accent);
+		}
+
 		h1 {
 			font-weight: var(--rvt-font-weight-bold);
 			font-size: 2em;
@@ -34,6 +38,24 @@ const id = getSlideId();
 		h2 {
 			font-weight: var(--rvt-font-weight-bold);
 			font-size: 1.5em;
+		}
+
+		mark {
+			background-color: var(--rvt-color-theme-background-accent-strong);
+			color: var(--rvt-color-theme-text-strong);
+		}
+
+		strong {
+			font-stretch: var(--rvt-font-width-expanded);
+		}
+
+		table {
+			margin-block-start: 1em;
+
+			th {
+				font-size: inherit;
+				line-height: inherit;
+			}
 		}
 	}
 </style>
