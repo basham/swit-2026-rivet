@@ -26,29 +26,29 @@ const rivetUrl = "https://unpkg.com/rivet-core@3.0.0-alpha.9/dist";
 
 <script>
 	function goToSlide(action: string) {
-		const slides = [...document.querySelectorAll("swit-slide")];
+		const ids = [...document.querySelectorAll("swit-slide")]
+			.map((slide) => slide.getAttribute("id"));
 
-		if (!slides.length) {
+		if (!ids.length) {
 			return;
 		}
 
 		const targetId = window.location.hash.slice(1);
-		const match = slides.findIndex((s) => s.getAttribute("id") === targetId);
+		const match = ids.findIndex((id) => id === targetId);
 		const index = match === -1 ? 0 : match;
-		const current = slides.at(index);
-		const first = slides.at(0);
-		const last = slides.at(-1);
-		const next = current === last ? first : slides.at(index + 1);
-		const prev = current === first ? last : slides.at(index - 1);
+		const current = ids.at(index);
+		const first = ids.at(0);
+		const last = ids.at(-1);
+		const next = current === last ? first : ids.at(index + 1);
+		const prev = current === first ? last : ids.at(index - 1);
 		const actionMap = { first, last, next, prev };
-		const slide = actionMap[action as keyof typeof actionMap];
+		const slideId = actionMap[action as keyof typeof actionMap];
 
-		if (!slide) {
+		if (!slideId) {
 			return;
 		}
 
-		const id = slide.getAttribute("id");
-		window.location.hash = ["#", id].join("");
+		window.location.hash = `#${slideId}`;
 	}
 
 	document.addEventListener("keydown", (event) => {
