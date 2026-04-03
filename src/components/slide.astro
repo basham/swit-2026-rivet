@@ -1,12 +1,19 @@
-<section>
+---
+import { getSlideId } from "../util.js";
+
+const id = getSlideId();
+---
+
+<swit-slide id={id}>
 	<slot />
-</section>
+</swit-slide>
 
 <style>
-	section {
+	swit-slide {
 		align-items: center;
 		background-color: var(--rvt-color-theme-background);
 		border-block-end: var(--rvt-size-8) solid var(--rvt-color-theme-ui);
+		display: block;
 		font-size: 4vw;
 		justify-content: center;
 		padding: 1em;

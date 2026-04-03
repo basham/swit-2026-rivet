@@ -2,7 +2,7 @@
 //import "rivet-core/dist/rivet.css";
 //import "rivet-core/dist/rivet-icons.css";
 //import "rivet-core/dist/rivet-stickers.css";
-import Slides from "../content/slides.astro";
+import Intro from "../slides/intro.astro";
 
 const rivetUrl = "https://unpkg.com/rivet-core@3.0.0-alpha.9/dist";
 ---
@@ -14,6 +14,49 @@ const rivetUrl = "https://unpkg.com/rivet-core@3.0.0-alpha.9/dist";
 		<link rel="stylesheet" href={`${rivetUrl}/rivet-stickers.css`}>
 	</head>
 	<body>
-		<Slides />
+		<Intro />
 	</body>
 </html>
+
+<style>
+	html {
+		scroll-behavior: auto;
+	}
+</style>
+
+<script>
+	function goToSlide(action: string) {
+		const slides = [...document.querySelectorAll("swit-slide")];
+
+		if (!slides.length) {
+			return;
+		}
+
+		const targetId = window.location.hash.slice(1);
+		const match = slides.findIndex((s) => s.getAttribute("id") === targetId);
+		const index = match === -1 ? 0 : match;
+		const current = slides.at(index);
+		const first = slides.at(0);
+		const last = slides.at(-1);
+		const next = current === last ? first : slides.at(index + 1);
+		const prev = current === first ? last : slides.at(index - 1);
+		const actionMap = { first, last, next, prev };
+		const slide = actionMap[action as keyof typeof actionMap];
+
+		if (!slide) {
+			return;
+		}
+
+		const id = slide.getAttribute("id");
+		window.location.hash = ["#", id].join("");
+	}
+
+	document.addEventListener("keydown", (event) => {
+		if (event.key === "ArrowLeft") {
+			goToSlide(event.shiftKey ? "first" : "prev");
+		}
+		if (event.key === "ArrowRight") {
+			goToSlide(event.shiftKey ? "last" : "next");
+		}
+	});
+</script>
