@@ -1,6 +1,6 @@
 # Rivet 3 for Developers
 
-- Presented by [Chris Basham](https://bash.am) and Zachary Todd
+- Talk presented by [Chris Basham](https://bash.am) and Zachary Todd
 - [Statewide IT Conference](https://www.statewideit.iu.edu) at Indiana University
 - April 14, 2026
 
