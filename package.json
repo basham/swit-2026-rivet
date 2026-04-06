@@ -10,6 +10,9 @@
 	},
 	"keywords": [],
 	"author": "Chris Basham <csbasham@iu.edu>",
+	"contributors": [
+		"Zachary Todd <zttodd@iu.edu>"
+	],
 	"license": "BSD-3-Clause",
 	"packageManager": "pnpm@10.32.1",
 	"devDependencies": {
