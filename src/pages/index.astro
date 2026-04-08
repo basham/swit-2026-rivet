@@ -49,8 +49,8 @@ const summary = "The next major version of the Rivet Design System (version 3) w
 		const current = ids.at(index);
 		const first = ids.at(0);
 		const last = ids.at(-1);
-		const next = current === last ? first : ids.at(index + 1);
-		const prev = current === first ? last : ids.at(index - 1);
+		const next = current === last ? current : ids.at(index + 1);
+		const prev = current === first ? current : ids.at(index - 1);
 		const actionMap = { first, last, next, prev };
 		const slideId = actionMap[action as keyof typeof actionMap];
 
