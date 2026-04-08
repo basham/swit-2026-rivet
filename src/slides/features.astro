@@ -1,0 +1,38 @@
+---
+import Slide from "../components/slide.astro";
+---
+
+<Slide>
+	<h2>Modern features in Rivet 3</h2>
+</Slide>
+
+<Slide>
+	<h3>Custom properties</h3>
+	<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*" target="_blank">Custom properties</a>: Widely available since Oct 2019.</p>
+	<p><code>var(--rvt-color-theme-background)</code></p>
+</Slide>
+
+<Slide>
+	<h3>Custom elements</h3>
+	<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements" target="_blank">Custom elements</a>: Widely available since Jan 2020</p>
+	<p><code set:text={`<rvt-icon name="heart">`}></code></p>
+</Slide>
+
+<Slide>
+	<h3>Developer experience with Baseline</h3>
+	<ul>
+		<li>Simplifies and clarifies decision-making.</li>
+		<li>Confidently adopt modern features and standards.</li>
+		<li>Build faster with less code.</li>
+		<li>Reduce tech debt, polyfills, and fallbacks.</li>
+	</ul>
+</Slide>
+
+<Slide>
+	<h3>User experience with Baseline</h3>
+	<ul>
+		<li>Faster load times.</li>
+		<li>Lighter network resources.</li>
+		<li>UI can adapt to user preferences and context<br>(color scheme, high contrast, reduced motion, device size, orientation, input type, location).</li>
+	</ul>
+</Slide>
