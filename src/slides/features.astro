@@ -7,32 +7,29 @@ import Slide from "../components/slide.astro";
 </Slide>
 
 <Slide>
-	<h3>Custom properties</h3>
-	<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*" target="_blank">Custom properties</a>: Widely available since Oct 2019.</p>
-	<p><code>var(--rvt-color-theme-background)</code></p>
-</Slide>
-
-<Slide>
-	<h3>Custom elements</h3>
-	<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/customElements" target="_blank">Custom elements</a>: Widely available since Jan 2020</p>
-	<p><code set:text={`<rvt-icon name="heart">`}></code></p>
-</Slide>
-
-<Slide>
-	<h3>Developer experience with Baseline</h3>
+	<h3>Color themes</h3>
+	<p><code set:text={`<div class="rvt-theme-crimson">`} /></p>
 	<ul>
-		<li>Simplifies and clarifies decision-making.</li>
-		<li>Confidently adopt modern features and standards.</li>
-		<li>Build faster with less code.</li>
-		<li>Reduce tech debt, polyfills, and fallbacks.</li>
+		<li>3 themes: Light. Dark. Crimson.</li>
+		<li><a href="https://indiana-university.github.io/rivet-source/layouts/tier-1/tier-1-default/" target="_blank">Layout example</a>: Light header and crimson footer</li>
 	</ul>
 </Slide>
 
 <Slide>
-	<h3>User experience with Baseline</h3>
+	<h3>Stickers</h3>
+	<p><code set:text={`<rvt-sticker name="accessibility" size="lg" theme="info">`} /></p>
 	<ul>
-		<li>Faster load times.</li>
-		<li>Lighter network resources.</li>
-		<li>UI can adapt to user preferences and context<br>(color scheme, high contrast, reduced motion, device size, orientation, input type, location).</li>
+		<li>Custom element (without JavaScript)</li>
+		<li><a href="https://indiana-university.github.io/rivet-source/components/sticker/sticker/" target="_blank">5 color themes and 5 sizes</a></li>
+		<li><a href="https://indiana-university.github.io/rivet-source/components/sticker/sticker-library/">172 stickers</a> (opt-in)</li>
+	</ul>
+</Slide>
+
+<Slide>
+	<h3>Hero</h3>
+	<ul>
+		<li><a href="https://indiana-university.github.io/rivet-source/components/hero/" target="_blank">5 variants</a> (including <a href="https://indiana-university.github.io/rivet-source/components/hero/hero-feature/" target="_blank">Feature Hero</a>)</li>
+		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/base/fonts.css#L8-L120" target="_blank">Fluid typography</a>: Custom properties, clamp()</li>
+		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/components/hero/hero.scss#L115-L211" target="_blank">When hero width is at least 864px:</a> Container queries, grid, :has(), :is(), nesting</li>
 	</ul>
 </Slide>
