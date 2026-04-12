@@ -7,6 +7,24 @@ import Slide from "../components/slide.astro";
 </Slide>
 
 <Slide>
+	<h3>Pro tip: Override styles with cascade layers</h3>
+	<p><code set:text=`@import url("third-party.css") layer(third-party);` /></p>
+	<ul>
+		<li>Avoid !important with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer" target="_blank">cascade layers</a>.</li>
+		<li>Import third-party code into a layer (optionally naming it).</li>
+		<li>All code not in a layer overrides code in a layer, regardless of selector specificity.</li>
+	</ul>
+</Slide>
+
+<Slide>
+	<h3>Use custom styles with Rivet layers</h3>
+	<pre><code set:text=`<link href="rivet.css">\n<link href="custom.css">` /></pre>
+	<pre><code set:text=`/* Top of rivet.css: */\n@layer rivet.base, rivet.components, rivet.utilities;` /></pre>
+	<pre><code set:text=`/* custom.css post-base, pre-component styles: */\n@layer rivet.base { ... }` /></pre>
+	<pre><code set:text=`/* custom.css top-layer styles: */\nhtml { ... }` /></pre>
+</Slide>
+
+<Slide>
 	<h3>Color themes</h3>
 	<p><code set:text={`<div class="rvt-theme-crimson">`} /></p>
 	<ul>
