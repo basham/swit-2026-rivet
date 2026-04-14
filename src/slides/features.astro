@@ -10,7 +10,7 @@ import Slide from "../components/slide.astro";
 	<h3>Pro tip: Override styles with cascade layers</h3>
 	<p><code set:text=`@import url("third-party.css") layer(third-party);` /></p>
 	<ul>
-		<li>Avoid !important with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer" target="_blank">cascade layers</a>.</li>
+		<li>Avoid !important with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer">cascade layers</a>.</li>
 		<li>Import third-party code into a layer (optionally naming it).</li>
 		<li>All code not in a layer overrides code in a layer, regardless of selector specificity.</li>
 	</ul>
@@ -28,8 +28,8 @@ import Slide from "../components/slide.astro";
 	<h3>Color themes</h3>
 	<p><code set:text={`<div class="rvt-theme-crimson">`} /></p>
 	<ul>
-		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/base/themes.css" target="_blank">3 themes</a>: Light. Dark. Crimson.</li>
-		<li><a href="https://indiana-university.github.io/rivet-source/layouts/tier-1/tier-1-default/" target="_blank">Layout example</a>: Light header and crimson footer</li>
+		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/base/themes.css">3 themes</a>: Light. Dark. Crimson.</li>
+		<li><a href="https://indiana-university.github.io/rivet-source/layouts/tier-1/tier-1-default/">Layout example</a>: Light header and crimson footer</li>
 	</ul>
 </Slide>
 
@@ -38,7 +38,7 @@ import Slide from "../components/slide.astro";
 	<p><code set:text={`<rvt-sticker name="accessibility" size="lg" theme="info">`} /></p>
 	<ul>
 		<li>Custom element (without JavaScript)</li>
-		<li><a href="https://indiana-university.github.io/rivet-source/components/sticker/sticker/" target="_blank">5 color themes and 5 sizes</a></li>
+		<li><a href="https://indiana-university.github.io/rivet-source/components/sticker/sticker/">5 color themes and 5 sizes</a></li>
 		<li><a href="https://indiana-university.github.io/rivet-source/components/sticker/sticker-library/">172 stickers</a> (opt-in)</li>
 	</ul>
 </Slide>
@@ -46,8 +46,8 @@ import Slide from "../components/slide.astro";
 <Slide>
 	<h3>Hero</h3>
 	<ul>
-		<li><a href="https://indiana-university.github.io/rivet-source/components/hero/" target="_blank">5 variants</a> (including <a href="https://indiana-university.github.io/rivet-source/components/hero/hero-feature/" target="_blank">Feature Hero</a>)</li>
-		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/base/fonts.css#L8-L120" target="_blank">Fluid typography</a>: Custom properties, clamp()</li>
-		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/components/hero/hero.scss#L115-L211" target="_blank">When hero width is at least 864px:</a> Container queries, grid, :has(), :is(), nesting</li>
+		<li><a href="https://indiana-university.github.io/rivet-source/components/hero/">5 variants</a> (including <a href="https://indiana-university.github.io/rivet-source/components/hero/hero-feature/">Feature Hero</a>)</li>
+		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/base/fonts.css#L8-L120">Fluid typography</a>: Custom properties, clamp()</li>
+		<li><a href="https://github.com/indiana-university/rivet-source/blob/v3.0.0-alpha.10/src/components/hero/hero.scss#L115-L211">When hero width is at least 864px:</a> Container queries, grid, :has(), :is(), nesting</li>
 	</ul>
 </Slide>
