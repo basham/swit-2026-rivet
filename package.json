@@ -16,7 +16,7 @@
 	"license": "BSD-3-Clause",
 	"packageManager": "pnpm@10.32.1",
 	"devDependencies": {
-		"astro": "6.1.5",
+		"astro": "6.1.7",
 		"rivet-core": "3.0.0-alpha.10"
 	}
 }
